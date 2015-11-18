@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "PLTableViewController"
+  s.name             = "PLTableManager"
   s.version          = "0.1.0"
   s.summary          = "Simple tableview controller with data source abstraction"
 
