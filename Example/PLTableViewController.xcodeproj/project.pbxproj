@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A112730016D7CAFC1E8D6A1 /* Pods_PLTableViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C779D5E0CA5C6BB37F547 /* Pods_PLTableViewController_Tests.framework */; };
 		426FAFB3F5503C98767EEC81 /* Pods_PLTableViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */; };
+		5E7718351BFC7CD500D2CA5B /* PLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */; };
+		5E7718371BFC801100D2CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,7 +41,10 @@
 		306913A58AC85798B3DB5E2F /* Pods-PLTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36CBF4012F8AEB62603F6F32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* PLTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PLTableViewController.app; path = PLTableViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7718331BFC7CD500D2CA5B /* PLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableViewCell.h; sourceTree = "<group>"; };
+		5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableViewCell.m; sourceTree = "<group>"; };
+		5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* PLTableViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLTableViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -108,7 +113,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* PLTableViewController.app */,
+				6003F58A195388D20070C39A /* PLTableViewController_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -135,6 +140,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* PLViewController.h */,
 				6003F5A6195388D20070C39A /* PLViewController.m */,
+				5E7718331BFC7CD500D2CA5B /* PLTableViewCell.h */,
+				5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */,
+				5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -213,7 +221,7 @@
 			);
 			name = PLTableViewController_Example;
 			productName = PLTableViewController;
-			productReference = 6003F58A195388D20070C39A /* PLTableViewController.app */;
+			productReference = 6003F58A195388D20070C39A /* PLTableViewController_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* PLTableViewController_Tests */ = {
@@ -277,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				5E7718371BFC801100D2CA5B /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,6 +402,7 @@
 				6003F59E195388D20070C39A /* PLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* PLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5E7718351BFC7CD500D2CA5B /* PLTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +525,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PLTableViewController/PLTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "PLTableViewController/PLTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -530,6 +541,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PLTableViewController/PLTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "PLTableViewController/PLTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

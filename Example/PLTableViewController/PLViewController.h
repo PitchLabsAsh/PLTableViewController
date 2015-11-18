@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+@import PLTableViewController;
 
-@interface PLViewController : UIViewController
+@interface PLViewController : PLTableViewController
 
 @end

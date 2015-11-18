@@ -7,6 +7,7 @@
 //
 
 #import "PLViewController.h"
+#import "PLTableViewCell.h"
 
 @interface PLViewController ()
 
@@ -17,13 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.cellFactory registerCellClass:[PLTableViewCell class] forModelClass:[NSString class]];
+    
+    PLMemoryDataSource *testSource = [PLMemoryDataSource new];
+    self.dataSource = testSource;
+    [testSource addItems:@[@"First",@"Second",@"Third"]];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
