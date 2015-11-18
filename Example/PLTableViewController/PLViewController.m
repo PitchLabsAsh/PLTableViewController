@@ -24,6 +24,15 @@
     PLMemoryDataSource *testSource = [PLMemoryDataSource new];
     self.dataSource = testSource;
     [testSource addItems:@[@"First",@"Second",@"Third"]];
+    [testSource addItems:@[@"First",@"Second",@"Third"] toSection:1];
+    
+    PLDataSourceSection *section = testSource.sections[0];
+    section.headerModel = @"Section1";
+
+    PLDataSourceSection *section2 = testSource.sections[1];
+    section2.headerModel = @"Section2";
+
+    
 }
 
 

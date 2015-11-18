@@ -55,6 +55,22 @@
 
 #pragma mark - Table view data source
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)sectionNumber
+{
+    PLDataSourceSection *dataSection = [self.dataSource sectionAtIndex:sectionNumber];
+    if ([dataSection.headerModel isKindOfClass:[NSString class]])
+        return dataSection.headerModel;
+    return nil;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)sectionNumber
+{
+    PLDataSourceSection *dataSection = [self.dataSource sectionAtIndex:sectionNumber];
+    if ([dataSection.footerModel isKindOfClass:[NSString class]])
+        return dataSection.footerModel;
+    return nil;
+}
+
 - (void)setupTableViewControllerDefaults
 {
     // the default animations used on data source changes

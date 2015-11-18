@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma clang assume_nonnull begin
+
 @interface PLDataSourceSection : NSObject
 
-@property (nonatomic, strong) NSMutableArray * objects;
+@property (nonatomic, strong) NSMutableArray *objects;
+@property (nonatomic, strong) id headerModel;
+@property (nonatomic, strong) id footerModel;
 
 @end
+
+#pragma clang assume_nonnull end
