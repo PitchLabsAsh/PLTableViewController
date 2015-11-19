@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A112730016D7CAFC1E8D6A1 /* Pods_PLTableViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C779D5E0CA5C6BB37F547 /* Pods_PLTableViewController_Tests.framework */; };
 		426FAFB3F5503C98767EEC81 /* Pods_PLTableViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */; };
+		5E06B5911BFDDC57002FED27 /* PLTableManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5E06B5901BFDDC57002FED27 /* PLTableManager.podspec */; };
 		5E7718351BFC7CD500D2CA5B /* PLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */; };
 		5E7718371BFC801100D2CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -41,6 +42,7 @@
 		306913A58AC85798B3DB5E2F /* Pods-PLTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36CBF4012F8AEB62603F6F32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E06B5901BFDDC57002FED27 /* PLTableManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PLTableManager.podspec; sourceTree = "<group>"; };
 		5E7718331BFC7CD500D2CA5B /* PLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableViewCell.h; sourceTree = "<group>"; };
 		5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableViewCell.m; sourceTree = "<group>"; };
 		5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +65,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6947D4FDCD208A2E73B84AA5 /* PLTableViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PLTableViewController.podspec; path = ../PLTableViewController.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B9F0F89C15D65CCBEBB5B4D /* Pods-PLTableViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C4B7D1AFF6BBC683A064D449 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -183,7 +184,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				6947D4FDCD208A2E73B84AA5 /* PLTableViewController.podspec */,
+				5E06B5901BFDDC57002FED27 /* PLTableManager.podspec */,
 				C4B7D1AFF6BBC683A064D449 /* README.md */,
 				36CBF4012F8AEB62603F6F32 /* LICENSE */,
 			);
@@ -288,6 +289,7 @@
 				5E7718371BFC801100D2CA5B /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				5E06B5911BFDDC57002FED27 /* PLTableManager.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
