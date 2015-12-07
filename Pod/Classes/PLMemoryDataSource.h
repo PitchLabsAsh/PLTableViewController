@@ -30,6 +30,11 @@
 - (void)deleteSections:(NSIndexSet *)indexSet;
 - (void)setItems:(nullable NSArray *)items forSectionIndex:(NSUInteger)sectionIndex;
 
+
+- (void)setSectionHeaderModel:(nullable id)headerModel forSectionIndex:(NSUInteger)sectionIndex;
+- (void)setSectionFooterModel:(nullable id)footerModel forSectionIndex:(NSUInteger)sectionIndex;
+
+
 @end
 
 #pragma clang assume_nonnull end

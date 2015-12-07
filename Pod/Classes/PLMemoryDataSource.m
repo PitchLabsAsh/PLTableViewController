@@ -10,19 +10,22 @@
 #import "PLDataSourcePrivate.h"
 
 @implementation PLMemoryDataSource
+{
+    NSMutableArray * sections;
+}
 
 -(instancetype)init
 {
     self = [super init];
-    self.sections = [NSMutableArray array];
+    sections = [NSMutableArray array];
     return self;
 }
 
 - (id)objectAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section < self.sections.count)
+    if (indexPath.section < sections.count)
     {
-        PLDataSourceSection *section = [self sections][indexPath.section];
+        PLDataSourceSection *section = sections[indexPath.section];
         if (indexPath.item < section.objects.count)
         {
             return section.objects[indexPath.row];
@@ -37,6 +40,18 @@
     [section.objects removeAllObjects];
     [section.objects addObjectsFromArray:items];
     [self.delegate dataSourceNeedsReload];
+}
+
+- (void)setSectionHeaderModel:(nullable id)headerModel forSectionIndex:(NSUInteger)sectionIndex;
+{
+    PLDataSourceSection *section = [self sectionAtIndex:sectionIndex];
+    section.headerModel = headerModel;
+}
+
+- (void)setSectionFooterModel:(nullable id)footerModel forSectionIndex:(NSUInteger)sectionIndex;
+{
+    PLDataSourceSection *section = [self sectionAtIndex:sectionIndex];
+    section.footerModel = footerModel;
 }
 
 #pragma mark - Adding items
@@ -196,19 +211,56 @@
 - (void)deleteSections:(NSIndexSet *)indexSet
 {
     [self startUpdate];
-    [self.sections removeObjectsAtIndexes:indexSet];
+    [sections removeObjectsAtIndexes:indexSet];
     [self.currentUpdate.deletedSectionIndexes addIndexes:indexSet];
     [self finishUpdate];
 }
 
 #pragma mark - items
 
+
+- (NSInteger)numberOfSections;
+{
+    return sections.count;
+}
+
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+{
+    if (section < [sections count])
+    {
+        PLDataSourceSection *sourceSection = sections[section];
+        return sourceSection.objects.count;
+    }
+    return 0;
+}
+
+-(id)headerModelForSection:(NSInteger)section
+{
+    if (section < [sections count])
+    {
+        PLDataSourceSection *sourceSection = sections[section];
+        return sourceSection.headerModel;
+    }
+    return nil;
+}
+
+-(id)footerModelForSection:(NSInteger)section
+{
+    if (section < [sections count])
+    {
+        PLDataSourceSection *sourceSection = sections[section];
+        return sourceSection.footerModel;
+    }
+    return nil;
+}
+
+
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath
 {
     PLDataSourceSection *section = nil;
-    if (indexPath.section < [self.sections count])
+    if (indexPath.section < [sections count])
     {
-        section = self.sections[indexPath.section];
+        section = sections[indexPath.section];
     }
     else
     {
@@ -227,9 +279,9 @@
 
 - (NSIndexPath *)indexPathForItem:(id)item
 {
-    for (NSUInteger sectionNumber = 0; sectionNumber < self.sections.count; sectionNumber++)
+    for (NSUInteger sectionNumber = 0; sectionNumber < sections.count; sectionNumber++)
     {
-        NSArray * rows = [self.sections[sectionNumber] objects];
+        NSArray * rows = [sections[sectionNumber] objects];
         NSUInteger index = [rows indexOfObject:item];
         
         if (index != NSNotFound)
@@ -253,20 +305,20 @@
 
 - (PLDataSourceSection *)getValidSection:(NSUInteger)sectionNumber
 {
-    if (sectionNumber < self.sections.count)
+    if (sectionNumber < sections.count)
     {
-        return self.sections[sectionNumber];
+        return sections[sectionNumber];
     }
     else
     {
-        for (NSInteger i = self.sections.count; i <= sectionNumber; i++)
+        for (NSInteger i = sections.count; i <= sectionNumber; i++)
         {
             PLDataSourceSection * section = [PLDataSourceSection new];
-            [self.sections addObject:section];
+            [sections addObject:section];
             
             [self.currentUpdate.insertedSectionIndexes addIndex:i];
         }
-        return [self.sections lastObject];
+        return [sections lastObject];
     }
 }
 
@@ -291,6 +343,8 @@
     NSSortDescriptor * descriptor = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:ascending];
     return [indexPaths sortedArrayUsingDescriptors:@[descriptor]];
 }
+
+
 
 
 @end

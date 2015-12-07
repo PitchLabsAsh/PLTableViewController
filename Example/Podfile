@@ -2,11 +2,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'PLTableViewController_Example', :exclusive => true do
-  pod "PLTableViewController", :path => "../"
+  pod "PLTableManager", :path => "../"
 end
 
 target 'PLTableViewController_Tests', :exclusive => true do
-  pod "PLTableViewController", :path => "../"
+  pod "PLTableManager", :path => "../"
 
   pod 'Specta'
   pod 'Expecta'

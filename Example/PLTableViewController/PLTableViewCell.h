@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <PLTableViewController/PLModelTransfer.h>
+
+@import PLTableManager;
 
 @interface PLTableViewCell : UITableViewCell <PLModelTransfer>
 

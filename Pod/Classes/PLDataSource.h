@@ -18,11 +18,14 @@
 @interface PLDataSource : NSObject
 
 @property (nonatomic, weak, nullable) id <PLDataSourceUpdating> delegate;
-@property (nonatomic, strong) NSMutableArray * sections;
 
-- (nullable PLDataSourceSection*)sectionAtIndex:(NSUInteger)sectionNumber;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
 - (nullable id)itemAtIndexPath:(NSIndexPath *)indexPath;
 - (nullable NSIndexPath *)indexPathForItem:(id)item;
+
+- (id)headerModelForSection:(NSInteger)index;
+- (id)footerModelForSection:(NSInteger)index;
 
 @end
 

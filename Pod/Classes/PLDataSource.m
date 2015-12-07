@@ -13,10 +13,14 @@
 
 @implementation PLDataSource
 
-
-- (nullable PLDataSourceSection*)sectionAtIndex:(NSUInteger)sectionNumber;
+- (NSInteger)numberOfSections;
 {
-    return nil;
+    return 0;
+}
+
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+{
+    return 0;
 }
 
 - (nullable id)itemAtIndexPath:(NSIndexPath *)indexPath;
@@ -29,6 +33,16 @@
     return nil;
 }
 
+
+- (id)headerModelForSection:(NSInteger)section;
+{
+    return nil;
+}
+
+- (id)footerModelForSection:(NSInteger)section;
+{
+    return nil;
+}
 
 #pragma mark - Updates
 

@@ -57,17 +57,17 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)sectionNumber
 {
-    PLDataSourceSection *dataSection = [self.dataSource sectionAtIndex:sectionNumber];
-    if ([dataSection.headerModel isKindOfClass:[NSString class]])
-        return dataSection.headerModel;
+    id headerModel = [self.dataSource headerModelForSection:sectionNumber];
+    if ([headerModel isKindOfClass:[NSString class]])
+        return headerModel;
     return nil;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)sectionNumber
 {
-    PLDataSourceSection *dataSection = [self.dataSource sectionAtIndex:sectionNumber];
-    if ([dataSection.footerModel isKindOfClass:[NSString class]])
-        return dataSection.footerModel;
+    id footerModel = [self.dataSource footerModelForSection:sectionNumber];
+    if ([footerModel isKindOfClass:[NSString class]])
+        return footerModel;
     return nil;
 }
 
@@ -85,12 +85,11 @@
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.dataSource.sections.count;
+    return self.dataSource.numberOfSections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    PLDataSourceSection *dataSection = [self.dataSource sectionAtIndex:section];
-    return dataSection.objects.count;
+    return [self.dataSource numberOfItemsInSection:section];
 }
 
 
