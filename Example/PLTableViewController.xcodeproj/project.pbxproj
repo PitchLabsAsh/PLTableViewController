@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A112730016D7CAFC1E8D6A1 /* Pods_PLTableViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C779D5E0CA5C6BB37F547 /* Pods_PLTableViewController_Tests.framework */; };
-		426FAFB3F5503C98767EEC81 /* Pods_PLTableViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */; };
+		30E1D7963BB6452672066C78 /* Pods_PLTableViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59350AD6A0400ED2A1133A5F /* Pods_PLTableViewController_Tests.framework */; };
+		423835DB2BBE21461CFBABA6 /* Pods_PLTableViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEEC1F9993F7BE476B08CE5 /* Pods_PLTableViewController_Example.framework */; };
 		5E06B5911BFDDC57002FED27 /* PLTableManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5E06B5901BFDDC57002FED27 /* PLTableManager.podspec */; };
 		5E7718351BFC7CD500D2CA5B /* PLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */; };
 		5E7718371BFC801100D2CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7718361BFC801100D2CA5B /* LaunchScreen.storyboard */; };
@@ -39,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		306913A58AC85798B3DB5E2F /* Pods-PLTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		01FF1D766EF782F1043671C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EEEC1F9993F7BE476B08CE5 /* Pods_PLTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CBF4012F8AEB62603F6F32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		509C41E9FD01C0ECAF567866 /* Pods-PLTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		59350AD6A0400ED2A1133A5F /* Pods_PLTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E06B5901BFDDC57002FED27 /* PLTableManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PLTableManager.podspec; sourceTree = "<group>"; };
 		5E7718331BFC7CD500D2CA5B /* PLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableViewCell.h; sourceTree = "<group>"; };
 		5E7718341BFC7CD500D2CA5B /* PLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableViewCell.m; sourceTree = "<group>"; };
@@ -65,12 +67,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7CC42AD986CBD95A359302E4 /* Pods-PLTableViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8B9F0F89C15D65CCBEBB5B4D /* Pods-PLTableViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C4B7D1AFF6BBC683A064D449 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E08BA36BF3933F52F79713EE /* Pods-PLTableViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EE796631A2167A15F4B305C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FF1C779D5E0CA5C6BB37F547 /* Pods_PLTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLTableViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3CD56E42E55699195550B3 /* Pods-PLTableViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLTableViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				426FAFB3F5503C98767EEC81 /* Pods_PLTableViewController_Example.framework in Frameworks */,
+				423835DB2BBE21461CFBABA6 /* Pods_PLTableViewController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,13 +92,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				1A112730016D7CAFC1E8D6A1 /* Pods_PLTableViewController_Tests.framework in Frameworks */,
+				30E1D7963BB6452672066C78 /* Pods_PLTableViewController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27EC28A58D493AB221C9D4E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509C41E9FD01C0ECAF567866 /* Pods-PLTableViewController_Example.debug.xcconfig */,
+				EE3CD56E42E55699195550B3 /* Pods-PLTableViewController_Example.release.xcconfig */,
+				01FF1D766EF782F1043671C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */,
+				7CC42AD986CBD95A359302E4 /* Pods-PLTableViewController_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +118,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				9FB584EBAD0133FB3553EC3A /* Pods */,
+				27EC28A58D493AB221C9D4E3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,8 +138,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				59F10497DC8C1B4B026BA68C /* Pods_PLTableViewController_Example.framework */,
-				FF1C779D5E0CA5C6BB37F547 /* Pods_PLTableViewController_Tests.framework */,
+				2EEEC1F9993F7BE476B08CE5 /* Pods_PLTableViewController_Example.framework */,
+				59350AD6A0400ED2A1133A5F /* Pods_PLTableViewController_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,17 +202,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		9FB584EBAD0133FB3553EC3A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				306913A58AC85798B3DB5E2F /* Pods-PLTableViewController_Example.debug.xcconfig */,
-				8B9F0F89C15D65CCBEBB5B4D /* Pods-PLTableViewController_Example.release.xcconfig */,
-				EE796631A2167A15F4B305C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */,
-				E08BA36BF3933F52F79713EE /* Pods-PLTableViewController_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,12 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PLTableViewController_Example" */;
 			buildPhases = (
-				879427026846ACCB49B4823D /* Check Pods Manifest.lock */,
+				EF90800E51E03AF0B5637C26 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				01C2BC13B90C18165814A87A /* Embed Pods Frameworks */,
-				12967B72B8AB8528B13B6D51 /* Copy Pods Resources */,
+				76CBB0F46E45AB153186F11D /* [CP] Embed Pods Frameworks */,
+				AE6F6F2780506AA5BA5D78EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,12 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "PLTableViewController_Tests" */;
 			buildPhases = (
-				0857AF5C759ECB987D6D5EFF /* Check Pods Manifest.lock */,
+				1C83FD2AD6C33250C3E2ACD6 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				0C2338A17AFD920F1812F348 /* Embed Pods Frameworks */,
-				0ABAF151F46970353C2B6325 /* Copy Pods Resources */,
+				60F6C3A8A955E30963E85AAE /* [CP] Embed Pods Frameworks */,
+				8CD78D863DA237F5437D6273 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,29 +304,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01C2BC13B90C18165814A87A /* Embed Pods Frameworks */ = {
+		1C83FD2AD6C33250C3E2ACD6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0857AF5C759ECB987D6D5EFF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,29 +319,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		0ABAF151F46970353C2B6325 /* Copy Pods Resources */ = {
+		60F6C3A8A955E30963E85AAE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0C2338A17AFD920F1812F348 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,14 +334,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		12967B72B8AB8528B13B6D51 /* Copy Pods Resources */ = {
+		76CBB0F46E45AB153186F11D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD78D863DA237F5437D6273 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Tests/Pods-PLTableViewController_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE6F6F2780506AA5BA5D78EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,14 +379,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLTableViewController_Example/Pods-PLTableViewController_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		879427026846ACCB49B4823D /* Check Pods Manifest.lock */ = {
+		EF90800E51E03AF0B5637C26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +520,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 306913A58AC85798B3DB5E2F /* Pods-PLTableViewController_Example.debug.xcconfig */;
+			baseConfigurationReference = 509C41E9FD01C0ECAF567866 /* Pods-PLTableViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -536,7 +536,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B9F0F89C15D65CCBEBB5B4D /* Pods-PLTableViewController_Example.release.xcconfig */;
+			baseConfigurationReference = EE3CD56E42E55699195550B3 /* Pods-PLTableViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -552,7 +552,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE796631A2167A15F4B305C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 01FF1D766EF782F1043671C3 /* Pods-PLTableViewController_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -575,7 +575,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E08BA36BF3933F52F79713EE /* Pods-PLTableViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = 7CC42AD986CBD95A359302E4 /* Pods-PLTableViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

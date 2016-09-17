@@ -1,13 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'PLTableViewController_Example', :exclusive => true do
-  pod "PLTableManager", :path => "../"
-end
+target 'PLTableViewController_Example' do
+  pod 'PLTableManager', :path => '../'
 
-target 'PLTableViewController_Tests', :exclusive => true do
-  pod "PLTableManager", :path => "../"
+  target 'PLTableViewController_Tests' do
+    inherit! :search_paths
 
-  pod 'Specta'
-  pod 'Expecta'
+      pod 'Expecta'
+  end
 end
